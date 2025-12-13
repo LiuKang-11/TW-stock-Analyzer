@@ -18,7 +18,7 @@ The project simplifies the discovery process by transforming open-source financi
 ### Week 2 — Data Preprocessing & Feature Engineering
 - Clean and normalize raw data
 - Transform raw inputs into preferred indicators：
-  1. Average Cost Line of Foreign Institutional Investors
+  1. Average Cost Line of Foreign Institutional Investors(外資成本平均線）
   2. TBD
 
 ### Week 3 — TBD( Feature extend)
