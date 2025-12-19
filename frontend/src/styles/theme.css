@@ -1,0 +1,24 @@
+:root {
+/* ===== Layout / Background ===== */
+  --color-bg-dark: #0F2A44;
+  --color-bg-dark-2: #17355c;
+  --color-bg-dark-3: #244378;
+
+  /* ===== Brand / Action ===== */
+  --color-primary: #4FACFE;
+  --color-primary-soft: #63b3ed;
+  --color-accent: #00F2FE;
+  --color-light: #ffffff;
+
+  /* ===== Surface / Card ===== */
+  --color-surface: #ffffff;
+
+  /* ===== Divider / Line ===== */
+  --color-divider-light: rgba(255, 255, 255, 0.08);
+
+  /* ===== Text ===== */
+  --text-white: #ffffff;
+  --text-white-soft: rgba(255,255,255,0.85);
+  --text-white-strong: rgba(255,255,255,0.95);
+  --text-dark: #0F2A44;
+}
