@@ -28,7 +28,7 @@ function HomeIntro() {
           </div>
         </section>
 
-        <section className="home-intro-section muted">
+        <section className="home-intro-section">
           <h2>用策略與篩選，讓決策更有依據</h2>
           <p>
             TW Stock Analyzer 將市場資料轉化為可理解的策略與條件，

@@ -1,0 +1,36 @@
+.today-recommend {
+  width: 100%;
+  padding: 60px 0 100px;
+}
+
+.today-recommend-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 21px;
+}
+
+.recommend-header {
+  margin-bottom: 48px;
+}
+
+.recommend-header h2 {
+  font-size: 26px;
+  color: #0c4a6e;
+  margin-bottom: 8px;
+}
+
+.recommend-header p {
+  color: #475569;
+  font-size: 15px;
+}
+
+.recommend-group {
+  margin-bottom: 56px;
+}
+
+/* RWD */
+@media (max-width: 768px) {
+  .today-recommend {
+    padding: 40px 0 60px;
+  }
+}

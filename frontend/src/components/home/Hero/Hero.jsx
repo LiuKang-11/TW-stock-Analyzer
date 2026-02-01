@@ -64,7 +64,7 @@ function generateStockPoints({
 /**
  * 將股價折線點轉換為平滑的 SVG Bezier path（Catmull-Rom 曲線）
  * p0 ~ p3 = 計算貝茲曲線控制點的前後參考點
- * @param {Array<{ x: number, y: number }>} pointsArray 
+ * @param {Array<{ x: number, y: number }>} pointsArray
  * @returns {string} 直接丟給 SVG <path d="..." /> 使用的字串
  */
 function catmullRomToBezierPath(pointsArray) {
@@ -98,7 +98,11 @@ function Hero() {
    * 計算趨勢線與淡淡的下方填色區域的 SVG path（僅初始化時計算一次）
    */
   const { linePathD, areaPathD } = useMemo(() => {
-    const stockPointsArray = generateStockPoints({ width: 800, height: 400, points: 70 });
+    const stockPointsArray = generateStockPoints({
+      width: 800,
+      height: 400,
+      points: 70,
+    });
     const linePathD = catmullRomToBezierPath(stockPointsArray);
     const lastPoint = stockPointsArray[stockPointsArray.length - 1];
     const firstPoint = stockPointsArray[0];
@@ -115,8 +119,12 @@ function Hero() {
           <h1>專業股市分析平台，新手也能穩定選股</h1>
           <p>每日策略推薦 × 自選股篩選，協助你避開情緒操作</p>
           <div className="hero-actions">
-            <button className="btn btn-primary" type="button">查看今日推薦</button>
-            <button className="btn btn-secondary btn-on-light" type="button">免費體驗</button>
+            <button className="btn btn-primary" type="button">
+              查看今日推薦
+            </button>
+            <button className="btn btn-secondary btn-on-light" type="button">
+              新手導覽
+            </button>
           </div>
         </div>
 
@@ -124,8 +132,7 @@ function Hero() {
           <svg
             className="trend-svg"
             viewBox="0 0 800 400"
-            preserveAspectRatio="xMidYMid meet"
-          >
+            preserveAspectRatio="xMidYMid meet">
             <defs>
               <linearGradient id="trendFill" x1="0" y1="0" x2="0" y2="1">
                 <stop offset="0%" stopColor="rgba(99,179,237,0.25)" />

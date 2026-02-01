@@ -1,0 +1,121 @@
+.strategy-banner {
+  width: 100%;
+  padding: 40px 0;
+}
+
+.strategy-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 360px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-image: url("../../../assets/strategy-content.jpg");
+  background-size: cover;
+  background-position: 30% center;
+  background-repeat: no-repeat;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  transition: background-position 0.4s ease;
+}
+
+.strategy-content::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(10, 18, 35, 0.5) 0%,
+    rgba(10, 18, 35, 0.25) 35%,
+    rgba(10, 18, 35, 0.1) 55%,
+    transparent 75%
+  );
+  z-index: 1;
+}
+
+.strategy-inner {
+  position: relative;
+  z-index: 10;
+  max-width: 600px;
+  padding-left: 6%;
+  padding-right: 5%;
+}
+
+.strategy-content h2 {
+  font-size: clamp(26px, 3vw, 32px);
+  font-weight: 700;
+  color: var(--text-white);
+  margin-bottom: 16px;
+  line-height: 1.3;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+}
+
+.strategy-desc {
+  font-size: clamp(14px, 1.5vw, 16px);
+  line-height: 1.8;
+  color: var(--text-white-medium);
+  margin-bottom: 24px;
+  text-shadow: none;
+}
+
+.strategy-points {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.strategy-points li {
+  font-size: clamp(13px, 1.5vw, 15px);
+  color: var(--text-white-medium);
+  font-weight: 500;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  text-shadow: none;
+}
+
+.strategy-points li::before {
+  content: "•";
+  color: #60a5fa;
+  font-weight: 900;
+  font-size: 14px;
+  margin-top: 2px;
+}
+
+/* RWD */
+@media (max-width: 1200px) {
+  .strategy-content {
+    background-position: 20% center;
+  }
+}
+
+@media (max-width: 950px) {
+  .strategy-content {
+    background-position: 10% center;
+  }
+}
+
+@media (max-width: 800px) {
+  .strategy-content {
+    background-position: 0% center;
+  }
+  .strategy-inner {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+}
+
+@media (max-width: 480px) {
+  .strategy-content {
+    background-position: 5% center;
+  }
+  .strategy-content::before {
+    background: rgba(10, 18, 35, 0.5);
+  }
+  .strategy-inner {
+    padding: 0 20px;
+  }
+}

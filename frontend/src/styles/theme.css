@@ -1,24 +1,25 @@
 :root {
-/* ===== Layout / Background ===== */
-  --color-bg-dark: #0F2A44;
+  /* ===== Layout / Background ===== */
+  --color-bg-dark: #0f2a44;
   --color-bg-dark-2: #17355c;
   --color-bg-dark-3: #244378;
 
   /* ===== Brand / Action ===== */
-  --color-primary: #4FACFE;
+  --color-primary: #4facfe;
   --color-primary-soft: #63b3ed;
-  --color-accent: #00F2FE;
+  --color-accent: #00f2fe;
   --color-light: #ffffff;
 
   /* ===== Surface / Card ===== */
-  --color-surface: #ffffff;
+  --color-surface: rgba(255, 255, 255, 0.95);
 
   /* ===== Divider / Line ===== */
   --color-divider-light: rgba(255, 255, 255, 0.08);
 
   /* ===== Text ===== */
   --text-white: #ffffff;
-  --text-white-soft: rgba(255,255,255,0.85);
-  --text-white-strong: rgba(255,255,255,0.95);
-  --text-dark: #0F2A44;
+  --text-white-soft: rgba(255, 255, 255, 0.85);
+  --text-white-medium: rgba(255, 255, 255, 0.9);
+  --text-white-strong: rgba(255, 255, 255, 0.95);
+  --text-dark: #0f2a44;
 }
