@@ -1,0 +1,11 @@
+{
+  "mode": "run",
+  "market": "TPEx",
+  "db": "tw_stock.db",
+  "start": "2025-01-02",
+  "end": "2025-12-23",
+  "chunk_stocks": 200,
+  "last_batch_done": 5,
+  "total_batches": 5,
+  "ts": "2025-12-23T01:22:04"
+}

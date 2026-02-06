@@ -1,0 +1,13 @@
+date
+stock_id
+close_price
+avg_price
+foreign_buy
+foreign_sell
+foreign_net
+foreign_net_lot
+foreign_hold_est
+foreign_cost_est
+margin_balance
+short_balance
+short_margin_ratio

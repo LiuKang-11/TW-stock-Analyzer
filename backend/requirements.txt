@@ -1,0 +1,13 @@
+urllib3<2
+# Core
+requests>=2.31.0,<3.0
+pandas>=2.1.0,<3.0
+
+# SQLite (built-in with Python, no pip install needed)
+# sqlite3
+
+# Plotting
+matplotlib>=3.8.0,<4.0
+
+# Optional (quality of life)
+python-dateutil>=2.8.2,<3.0
