@@ -18,7 +18,9 @@ function Header() {
               推薦股
             </NavLink>
 
-            <div className="menu-item disabled">自選股</div>
+            <NavLink to="/watchlist" className="menu-item">
+              自選股
+            </NavLink>
           </div>
         </div>
       </div>

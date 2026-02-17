@@ -1,0 +1,67 @@
+.watchlist-page {
+  height: calc(100vh - 60px);
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 16px 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.watchlist-page-top-bar {
+  margin-bottom: 16px;
+  flex-shrink: 0;
+}
+
+.watchlist-page-content {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+  gap: 20px;
+}
+
+.watchlist-page-sidebar {
+  width: 300px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.watchlist-page-main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+/* RWD */
+@media (max-width: 768px) {
+  .watchlist-page {
+    padding: 12px 0;
+    height: calc(100vh - 60px);
+  }
+
+  .watchlist-page-content {
+    flex-direction: column;
+    gap: 0;
+    overflow: hidden;
+  }
+
+  .watchlist-page-sidebar {
+    width: 100%;
+    height: 320px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    padding: 0 12px;
+  }
+
+  .watchlist-page-main {
+    flex: 1;
+    min-height: 0;
+    padding: 0 12px;
+  }
+}

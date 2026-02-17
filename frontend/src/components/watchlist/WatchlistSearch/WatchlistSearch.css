@@ -1,0 +1,35 @@
+.watchlist-search {
+  width: 100%;
+  max-width: 260px;
+  margin-left: 16px;
+  transition: all 0.3s ease;
+}
+
+.search-input {
+  width: 100%;
+  padding: 8px 0;
+  border: none;
+  border-bottom: 2px solid #e2e8f0;
+  background: transparent;
+  font-size: 14px;
+  color: #1e293b;
+  outline: none;
+}
+
+.search-input:focus {
+  border-bottom-color: #cbd5e1;
+}
+
+.search-input::placeholder {
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+/* RWD */
+@media (max-width: 768px) {
+  .watchlist-search {
+    max-width: 200px;
+    margin-left: 30px;
+    box-sizing: border-box;
+  }
+}
