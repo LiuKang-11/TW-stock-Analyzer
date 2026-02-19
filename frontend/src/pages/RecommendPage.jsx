@@ -4,8 +4,17 @@ import TodayRecommend from "../components/recommend/TodayRecommend/TodayRecommen
 function RecommendPage() {
   return (
     <main className="page">
-      <StrategyBanner />
-      <TodayRecommend />
+      <section className="strategy-banner">
+        <div className="container">
+          <StrategyBanner />
+        </div>
+      </section>
+
+      <section className="today-recommend">
+        <div className="container">
+          <TodayRecommend />
+        </div>
+      </section>
     </main>
   );
 }

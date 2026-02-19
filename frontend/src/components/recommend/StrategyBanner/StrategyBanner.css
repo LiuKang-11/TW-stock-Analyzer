@@ -4,8 +4,6 @@
 }
 
 .strategy-content {
-  max-width: 1200px;
-  margin: 0 auto;
   min-height: 360px;
   border-radius: 12px;
   overflow: hidden;
@@ -102,6 +100,7 @@
   .strategy-content {
     background-position: 0% center;
   }
+
   .strategy-inner {
     padding-left: 4%;
     padding-right: 4%;
@@ -112,9 +111,11 @@
   .strategy-content {
     background-position: 5% center;
   }
+
   .strategy-content::before {
     background: rgba(10, 18, 35, 0.5);
   }
+
   .strategy-inner {
     padding: 0 20px;
   }

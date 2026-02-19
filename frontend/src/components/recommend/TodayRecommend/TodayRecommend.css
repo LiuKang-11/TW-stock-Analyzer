@@ -1,16 +1,9 @@
 .today-recommend {
-  width: 100%;
-  padding: 60px 0 100px;
-}
-
-.today-recommend-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 21px;
+  padding: 40px 0;
 }
 
 .recommend-header {
-  margin-bottom: 48px;
+  margin-bottom: 40px;
 }
 
 .recommend-header h2 {
@@ -26,11 +19,4 @@
 
 .recommend-group {
   margin-bottom: 56px;
-}
-
-/* RWD */
-@media (max-width: 768px) {
-  .today-recommend {
-    padding: 40px 0 60px;
-  }
 }

@@ -1,17 +1,8 @@
-.home-intro {
-  width: 100vw;
-  padding: 40px 0;
-  background: transparent;
-
-}
-
 .home-intro-container {
-  max-width: 1200px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 60px;
-  padding: 40px 21px;
+  padding: 40px 0;
 }
 
 .home-intro-section {
@@ -83,10 +74,12 @@
   .feature-grid {
     grid-template-columns: 1fr;
   }
+
   .home-intro-container {
     padding: 28px 16px;
     gap: 40px;
   }
+
   .home-intro-actions {
     gap: 8px;
     margin-top: 12px;

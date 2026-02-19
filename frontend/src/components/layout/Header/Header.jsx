@@ -4,7 +4,7 @@ import "./Header.css";
 function Header() {
   return (
     <header className="header-background">
-      <div className="header-container">
+      <div className="container header-container">
         <NavLink to="/" end className="brand-logo">
           TW-stock-Analyzer
         </NavLink>

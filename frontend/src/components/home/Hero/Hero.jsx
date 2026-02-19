@@ -113,40 +113,38 @@ function Hero() {
   }, []);
 
   return (
-    <section className="hero-section">
-      <div className="hero-container">
-        <div className="hero-left">
-          <h1>專業股市分析平台，新手也能穩定選股</h1>
-          <p>每日策略推薦 × 自選股篩選，協助你避開情緒操作</p>
-          <div className="hero-actions">
-            <button className="btn btn-primary" type="button">
-              查看今日推薦
-            </button>
-            <button className="btn btn-secondary btn-on-light" type="button">
-              新手導覽
-            </button>
-          </div>
-        </div>
-
-        <div className="hero-right" aria-hidden="true">
-          <svg
-            className="trend-svg"
-            viewBox="0 0 800 400"
-            preserveAspectRatio="xMidYMid meet">
-            <defs>
-              <linearGradient id="trendFill" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stopColor="rgba(99,179,237,0.25)" />
-                <stop offset="100%" stopColor="rgba(99,179,237,0)" />
-              </linearGradient>
-            </defs>
-
-            <path d={areaPathD} fill="url(#trendFill)" />
-
-            <path className="trend-line-path" d={linePathD} pathLength={1} />
-          </svg>
+    <div className="container hero-container">
+      <div className="hero-left">
+        <h1>專業股市分析平台，新手也能穩定選股</h1>
+        <p>每日策略推薦 × 自選股篩選，協助你避開情緒操作</p>
+        <div className="hero-actions">
+          <button className="btn btn-primary" type="button">
+            查看今日推薦
+          </button>
+          <button className="btn btn-secondary btn-on-light" type="button">
+            新手導覽
+          </button>
         </div>
       </div>
-    </section>
+
+      <div className="hero-right" aria-hidden="true">
+        <svg
+          className="trend-svg"
+          viewBox="0 0 800 400"
+          preserveAspectRatio="xMidYMid meet">
+          <defs>
+            <linearGradient id="trendFill" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="rgba(99,179,237,0.25)" />
+              <stop offset="100%" stopColor="rgba(99,179,237,0)" />
+            </linearGradient>
+          </defs>
+
+          <path d={areaPathD} fill="url(#trendFill)" />
+
+          <path className="trend-line-path" d={linePathD} pathLength={1} />
+        </svg>
+      </div>
+    </div>
   );
 }
 

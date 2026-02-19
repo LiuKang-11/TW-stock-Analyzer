@@ -9,17 +9,16 @@
     rgba(15, 42, 68, 0.95),
     rgba(12, 34, 56, 0.95)
   );
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.05), 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.05),
+    0 4px 12px rgba(0, 0, 0, 0.15);
   background-clip: padding-box;
 }
 
 .header-container {
-  max-width: 1200px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 32px;
   height: 60px;
 }
 
@@ -30,14 +29,18 @@
   cursor: pointer;
   display: inline-block;
   color: var(--text-white-strong);
-  text-shadow: 0 0 1px rgba(255, 255, 255, 0.2), 0 0 6px rgba(79, 172, 254, 0.1);
+  text-shadow:
+    0 0 1px rgba(255, 255, 255, 0.2),
+    0 0 6px rgba(79, 172, 254, 0.1);
   transition: all 0.3s ease;
   text-decoration: none;
 }
 
 .brand-logo:hover {
   color: var(--text-white);
-  text-shadow: 0 0 2px var(--text-white), 0 0 10px #4facfe,
+  text-shadow:
+    0 0 2px var(--text-white),
+    0 0 10px #4facfe,
     0 0 20px rgba(79, 172, 254, 0.4);
   text-decoration: none;
 }
@@ -99,9 +102,11 @@
     align-items: flex-start;
     height: auto;
   }
+
   .menu {
     gap: 16px;
   }
+
   .menu-group {
     gap: 12px;
   }

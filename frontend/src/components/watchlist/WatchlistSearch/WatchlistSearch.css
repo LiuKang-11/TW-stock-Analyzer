@@ -1,8 +1,6 @@
 .watchlist-search {
   width: 100%;
   max-width: 260px;
-  margin-left: 16px;
-  transition: all 0.3s ease;
 }
 
 .search-input {
@@ -29,7 +27,6 @@
 @media (max-width: 768px) {
   .watchlist-search {
     max-width: 200px;
-    margin-left: 30px;
     box-sizing: border-box;
   }
 }

@@ -5,27 +5,18 @@
   min-height: 0;
 }
 
-.table-header,
-.row {
+.table-header {
   display: grid;
   grid-template-columns: 32px 1fr 110px 50px;
   align-items: center;
-  padding: 0 16px;
-  box-sizing: border-box;
-}
-
-.table-header {
   height: 44px;
+  padding: 0 16px;
   font-size: 13px;
   font-weight: 600;
   color: #94a3b8;
   border-bottom: 1px solid #f1f5f9;
   background: #fff;
-  position: sticky;
-  top: 0;
-  z-index: 10;
   flex-shrink: 0;
-  padding-right: 32px;
 }
 
 .col-stock-header {
@@ -41,8 +32,6 @@
   text-align: right;
   font-weight: 600;
   color: #1e293b;
-  font-variant-numeric: tabular-nums;
-  padding-right: 15px;
 }
 
 .col-action {
@@ -52,13 +41,16 @@
 
 .table-body {
   flex: 1;
-  overflow-y: scroll;
   min-height: 0;
   overflow-y: auto;
 }
 
 .row {
-  height: 60px;
+  display: grid;
+  grid-template-columns: 32px 1fr 110px 50px;
+  align-items: center;
+  height: 56px;
+  padding: 0 16px;
   border-bottom: 1px solid #f8fafc;
   cursor: pointer;
 }
@@ -89,16 +81,14 @@
 }
 
 .col-stock .name {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
   color: #1e293b;
-  line-height: 1.2;
 }
 
 .col-stock .code {
   font-size: 12px;
   color: #94a3b8;
-  margin-top: 2px;
 }
 
 .delete-btn {
@@ -129,16 +119,13 @@
   align-items: center;
   text-align: center;
   color: #64748b;
-  padding: 80px 20px;
-  gap: 10px;
-  font-size: 15px;
-  line-height: 1.6;
+  gap: 8px;
+  padding: 40px 20px;
 }
 
 .empty-state-main span {
   font-size: 13px;
   color: #94a3b8;
-  max-width: 240px;
 }
 
 /* RWD */
@@ -169,14 +156,5 @@
     font-size: 16px;
     background: transparent;
     color: #cbd5e1;
-  }
-
-  .empty-state-main {
-    padding: 40px 12px;
-    font-size: 14px;
-  }
-
-  .empty-state-main span {
-    font-size: 12px;
   }
 }

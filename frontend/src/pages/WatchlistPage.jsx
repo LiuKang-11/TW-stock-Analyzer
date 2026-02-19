@@ -9,20 +9,26 @@ function WatchlistPage() {
   const [watchlistStocks] = useState([]);
 
   return (
-    <main className="watchlist-page">
-      <div className="watchlist-page-top-bar">
-        <WatchlistSearch />
-      </div>
+    <main className="page">
+      <section className="watchlist-section">
+        <div className="container">
+          <div className="watchlist-page">
+            <div className="watchlist-page-top-bar">
+              <WatchlistSearch />
+            </div>
 
-      <div className="watchlist-page-content">
-        <aside className="watchlist-page-sidebar">
-          <WatchlistSidebar watchlistGroups={watchlistGroups} />
-        </aside>
+            <div className="watchlist-page-content">
+              <aside className="watchlist-page-sidebar">
+                <WatchlistSidebar watchlistGroups={watchlistGroups} />
+              </aside>
 
-        <section className="watchlist-page-main">
-          <WatchlistTable watchlistStocks={watchlistStocks} />
-        </section>
-      </div>
+              <section className="watchlist-page-main">
+                <WatchlistTable watchlistStocks={watchlistStocks} />
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }

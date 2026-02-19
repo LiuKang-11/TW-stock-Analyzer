@@ -25,6 +25,7 @@
 .group-list::-webkit-scrollbar {
   width: 5px;
 }
+
 .group-list::-webkit-scrollbar-thumb {
   background: #e2e8f0;
   border-radius: 10px;
@@ -38,8 +39,6 @@
   border-radius: 8px;
   color: #64748b;
   cursor: pointer;
-  margin-bottom: 2px;
-  gap: 8px;
 }
 
 .group-item:hover {
@@ -112,20 +111,18 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 20px 12px;
-  gap: 6px;
   color: #64748b;
-  font-size: 14px;
-  line-height: 1.6;
+  gap: 8px;
+  padding: 20px 20px;
 }
 
 .empty-state-sidebar span {
-  color: #94a3b8;
   font-size: 13px;
+  color: #94a3b8;
 }
 
 .add-group-btn {
-  margin: 16px 12px;
+  margin: 12px;
   padding: 12px;
   border: 1px solid #e2e8f0;
   background: #fff;
@@ -149,14 +146,5 @@
 
   .group-actions {
     opacity: 1;
-  }
-
-  .empty-state-sidebar {
-    padding: 40px 12px;
-    font-size: 14px;
-  }
-
-  .empty-state-sidebar span {
-    font-size: 12px;
   }
 }
